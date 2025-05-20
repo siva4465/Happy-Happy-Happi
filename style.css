@@ -175,8 +175,8 @@ body {
 }
 
 .card {
-  width: 640px;
-  height: 400px;
+  width: 660px;
+  height: 460px;
   position: absolute;
   margin: auto;
   left: 0;
@@ -317,12 +317,12 @@ body {
 }
 
 .outside p {
-  font-size: 23px;
+  font-size: 27px;
   text-transform: uppercase;
-  margin-top: 20px;
-  /* margin-bottom: 2px; */
+  margin-top: 30px;
+  /* margin-bottom: 90px; */
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   color: #000046;
   font-weight: bold;
 }
@@ -416,4 +416,27 @@ body {
   .inside h1 {
     font-size: 60px;
   }
+}
+
+@media (max-width: 768px) {
+  .inside .wish-image {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inside .wish-image {
+    max-height: 120px;
+  }
+}
+
+
+.inside .wish-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border: 2px solid #ccc;
 }
